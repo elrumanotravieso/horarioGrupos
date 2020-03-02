@@ -1,0 +1,25 @@
+
+ion-grid {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  ion-row {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  ion-row:nth-child(even) {
+    background-color: #dddddd;
+  }
+  ion-col{
+      text-align: center;
+  }
+
+  .header {
+    text-align: center;
+    padding: 1.4em;
+    font-style: italic;
+}
