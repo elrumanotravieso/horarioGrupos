@@ -1,14 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title class='header'>
+      Nivel Estudio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+
+
+<ion-content class="body">
+  <div *ngFor="let nivel of listaNivelesEstudios">
+  <ion-card  (click)="enviarDato(nivel)" style="background-color: salmon; border-color: black;">
+  <ion-card-header style="text-align: center;">
+   {{nivel.nombre}}
+  </ion-card-header>
+  </ion-card>
+</div>
 </ion-content>

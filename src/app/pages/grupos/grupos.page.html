@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="header">Grupos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let grupo of listaGrupos">
+    <ion-card  (click)="enviarDato(grupo.nombre)" style="background-color: salmon;">
+    <ion-card-header style="text-align: center;">
+     {{grupo.nombre}}
+    </ion-card-header>
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-footer style="border-color: grey;">
+  <ion-button [routerLink]="['/home']" >
+    <ion-icon name="arrow-back"></ion-icon>
+  </ion-button>
+</ion-footer>
